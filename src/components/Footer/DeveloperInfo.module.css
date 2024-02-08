@@ -1,0 +1,15 @@
+.dev_info{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.dev_info a {
+    margin-left: 5px;
+}

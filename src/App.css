@@ -1,0 +1,487 @@
+.wrapper {
+    margin: 0 10%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.height_wrapper {
+    height: 75vh;
+}
+
+.tsc {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    color: #03b663;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.navbar a {
+    margin: 0 5px;
+    padding: 7px;
+    height: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar a:hover {
+    background-color: #11e4c1;
+    color: white;
+}
+.navbar a.active {
+    background-color: #11e4c1;
+    color: white;
+}
+
+.responsive_title {
+    display: none;
+}
+
+
+/* home */
+.mms_home {
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#left_icon {
+    fill: #11e4c1;
+}
+
+.icon-tabler-check {
+    background-color: #11e4c1;
+    color: white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+ }
+
+#Layer_1 {
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+    fill: white;
+    color: white;
+    stroke: white;
+}
+
+/*Home Responsive*/
+
+@media screen and (max-width: 400px){
+
+}
+
+
+
+/* FLoor */
+.floor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.floor p {
+    height: 200px;
+    width: 200px;
+    border-radius: 7px;
+    background-color: #11e4c1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: white;
+
+}
+
+/* Form  */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+form input {
+    height: 30px;
+    border-radius: 5px;
+    outline: #11e4c1;
+    border: 1px solid #11e4c1;
+    margin: 2px;
+    padding: 0 10px;
+    text-align: start;
+    
+  }
+  
+  form input:focus {
+    outline: #11e4c1;
+    box-shadow: 0 0 0 0.1rem #11e4c1;
+  }
+
+.select_item {
+    height: 30px;
+    border-radius: 5px;
+    outline: #11e4c1;
+    border: 1px solid #11e4c1;
+    margin: 2px;
+    padding: 0 10px;
+    text-align: start;
+}
+
+/* Student */
+.students {
+    margin: 0 10% 30px;
+
+}
+
+.students p {
+    margin: 0;
+}
+
+.table {
+    margin-top: 20px;
+    box-shadow: 0 0 0 0.1rem #11e4c1;
+    border-radius: 7px;
+}
+
+.table_head h5 {
+    margin: 5px;
+}
+
+.table_head, .table_data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding: 5px 20px;
+
+}
+
+.table_data {
+    height: 61vh;
+    overflow-y: auto;
+}
+
+.table_data p {
+    
+}
+
+.student_quantity {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.active_student, .leaving_student, .exit_student {
+    background-color: #11e4c1;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.leaving_student {
+    background-color: #0078ff;
+    color: white;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+}
+
+.exit_student {
+    background-color: #ff4242;
+}
+
+  /* Profile */
+.profile h3 {
+    text-align: center;
+  }
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+.icon-tabler-pencil {
+    height: 20px;
+    width: 20px;
+}
+
+.icon-tabler-pencil:hover {
+      color: #11e4c1;
+  }
+
+.exit:hover {
+    fill: #11e4c1;
+}
+
+
+  /*profile >>> personal payment hostory*/
+.payment_count {
+
+
+}
+
+
+/*Office*/
+
+  /*payment confirmation */
+
+.payment_confirmation div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.3fr;
+    align-items: flex-start;
+}
+.payment_confirmation div p {
+    margin: 5px 0;
+}
+.payment_count div p {
+    margin: 5px 0;
+}
+/*payment list*/
+
+.csv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #11e4c1;
+    margin-top: 10px;
+}
+
+
+/* Room */
+.rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.room {
+    height: 200px;
+    width: 200px;
+    border-radius: 7px;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.room h4 {
+    /*margin: 0;*/
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.room_students {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.student {
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+    background-color: #11e4c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.blue {
+    background-color: blue;
+}
+
+ .menu {
+    display: none;
+    cursor: pointer;
+    width: 10px;
+     position: absolute;
+     margin-top: 20px;
+     right: 20px;
+
+  }
+
+.menu.bar {
+    filter: invert(0.8);
+  }
+.line {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    margin: 3px;
+}
+
+.navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 20px;
+
+
+}
+
+
+/* Dashboard */
+.dashboard {
+  margin: 0;
+  padding: 2%;
+  background-color: #303138;
+  color: white;
+}
+
+.dashboard h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.dashboard_body {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  gap: 20px;
+  justify-items: center;
+  align-items: flex-start;
+
+  height: 80vh;
+}
+
+.side_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.side_nav a {
+  text-decoration: none;
+  color: #353535;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+}
+
+.side_nav a:hover{
+  color: #4afffc;
+
+}
+.side_nav a.active{
+  color: #4afffc;
+
+}
+
+@media screen and (max-width: 600px){
+    .wrapper {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .responsive_title {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        right: 70px;
+        background-color: #eeeeee;
+        width: 200px;
+         border-radius: 7px;
+
+    }
+
+    .navbar h2 {
+        display: none;
+    }
+
+
+    .rooms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 10px;
+        padding: 0 ;
+    }
+
+    .room h4 {
+        margin: 0;
+
+    }
+    .room {
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .room_students {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .student_quantity {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.75rem;
+    }
+
+    .payment_confirmation {
+        font-size: 0.7rem;
+    }
+
+    .payment_count {
+        font-size: 0.75rem;
+    }
+
+    .payment_count strong {
+        margin: 0;
+    }
+
+    .profile {
+        margin-top: 50px;
+    }
+
+}
