@@ -41,7 +41,8 @@ const Home = () => {
       {!username ?
       <div className='mms_home'>
         <h2>Mess Management System MMS</h2>
-        <svg onClick={()=>navigate('/login/')} width="32" height="32" id='left_icon' viewBox="0 0 32 32" fill="#000000"><g>
+          <h3 className='guide'>Documentation</h3>
+        <svg onClick={()=>navigate('/documentation/')} width="32" height="32" id='left_icon' viewBox="0 0 32 32" fill="#000000"><g>
          <path d="M 17,2C 8.716,2, 2,8.716, 2,17S 8.716,32, 17,32S 32,25.284, 32,17S 25.284,2, 17,2z M 21.7,17.71l-6.486,6.486 c-0.39,0.39-1.024,0.39-1.414,0c-0.39-0.39-0.39-1.024,0-1.414L 19.582,17L 13.8,11.218c-0.39-0.39-0.39-1.024,0-1.414 c 0.39-0.39, 1.024-0.39, 1.414,0l 6.486,6.486c 0.196,0.196, 0.294,0.454, 0.292,0.71C 21.992,17.258, 21.896,17.514, 21.7,17.71z">
          </path></g></svg>
       </div> :

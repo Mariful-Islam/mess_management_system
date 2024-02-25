@@ -403,6 +403,19 @@ form input {
 
 }
 
+/* documentation  */
+.documentation{
+    padding: 0 10px;    
+}
+
+.mess_description {
+    text-align: justify;
+}
+
+
+
+/* Responsive Interface */
+
 @media screen and (max-width: 600px){
     .wrapper {
         margin: 0;

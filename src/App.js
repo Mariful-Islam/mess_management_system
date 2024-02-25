@@ -18,6 +18,7 @@ import InfoEdit from "./pages/InfoEdit";
 import Welcome from "./pages/Welcome";
 import {MessProvider} from "./Context/MessContext";
 import React from "react";
+import Documentation from './components/Documentation';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
                   <Route Component={SignUp} path='/signup'/>
                   <Route Component={StudentForm} path='/student_form/' />
                   <Route Component={InfoEdit} path='/edit/'/>
+                  <Route Component={Documentation} path='/documentation/'/>
                 </Routes>
                 <DeveloperInfo/>
               </MessProvider>
