@@ -7,7 +7,7 @@ This is a web application for managing student or people of a building. It manag
 1. Go to New Mess Setup option
 ![new mess setup](https://ibb.co/c2vRJxJ)
 2. Create account
-![admin account creation](https://ibb.co/zRhJRBt)
+![admin account creation](https://i.ibb.co/2t7NtCp/Capturedfa.png)
 
 Then the mess name will be shown if a student create a account.
 
