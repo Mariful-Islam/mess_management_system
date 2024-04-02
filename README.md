@@ -2,6 +2,15 @@
 This is a web application for managing student or people of a building. It manages payment, student entry or exit, student info query. It is not developed not only for a mess or house but also developed for more house. 
 
 # How can you use this application?
+
+## Owner accont creation
+1. Go to New Mess Setup option
+![new mess setup](https://ibb.co/c2vRJxJ)
+2. Create account
+![admin account creation](https://ibb.co/zRhJRBt)
+
+Then the mess name will be shown if a student create a account.
+
 1. First of all, goto sign up tab and create a account using username, email and password.
 2. Then go to profile and create student account using associate mess, room number, nid, phone number, email, department, district and division. 
 3. After goto home and you can see all students are shown according to room number. In student tab all student's information are shown and you can search through student name. 
