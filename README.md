@@ -2,7 +2,6 @@
 
 This is a web application for managing student or people of a building. It manages payment, student entry or exit, student info query. It is not developed not only for a mess or house but also developed for more house. 
 
-
 ## To initialize this project in your machine
 
 1. Firstly clone this repository in your local machine.
@@ -31,7 +30,6 @@ First of all, visit the link https://mess-saaddev.web.app/
 
 ## Owner accont Creation
 
-<<<<<<< HEAD
 1. Go to New Mess Setup option 
 ##
 ![new mess setup](https://i.ibb.co/VMNbV3V/Capture11.png)
@@ -40,26 +38,14 @@ First of all, visit the link https://mess-saaddev.web.app/
 ##
 ![admin account creation](https://i.ibb.co/2t7NtCp/Capturedfa.png)
 ##
-=======
-1. Go to New Mess Setup option __
-![new mess setup](https://i.ibb.co/VMNbV3V/Capture11.png) __
-2. Create account__
-![admin account creation](https://i.ibb.co/2t7NtCp/Capturedfa.png) __
-
->>>>>>> 08e92865a7e09d9e6b4c5e8ad9daf4fe8cd2e88d
 Then the mess name will be shown if a student create a account.
 
 
 
 ## Student Account Creation
 
-<<<<<<< HEAD
 1. First of all, goto sign up tab and create a account using username, email and password.
 ##
-=======
-1. First of all, goto sign up tab and create a account using username, email and password. __
-
->>>>>>> 08e92865a7e09d9e6b4c5e8ad9daf4fe8cd2e88d
 ![signup](https://i.ibb.co/GPcHLyV/sign-up.png) 
 ##
 or if you have account visit login page.
