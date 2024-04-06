@@ -2,7 +2,7 @@
 
 This is a web application for managing student or people of a building. It manages payment, student entry or exit, student info query. It is not developed not only for a mess or house but also developed for more house. 
 
-<<<<<<< HEAD
+
 ## To initialize this project in your machine
 
 1. Firstly clone this repository in your local machine.
@@ -22,9 +22,6 @@ npm install
 ``` sh 
 npm start
 ```
-=======
-
->>>>>>> 08e92865a7e09d9e6b4c5e8ad9daf4fe8cd2e88d
 
 # How can you use this application?
 
