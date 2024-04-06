@@ -88,3 +88,7 @@ Then press Pay button.
 7. When admin confirm his payment student will get email and red cross sign will be removed and green will be shown.
 ##
 ![confirm payment ](https://i.ibb.co/njB77r2/con1.png)
+
+8.  Also, an email will be send when admin confirm a payment.
+##
+![confirmation email](https://i.ibb.co/DkFVXbD/mail.png)
