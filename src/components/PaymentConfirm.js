@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 
 const PaymentConfirm =()=>{
     let username = localStorage.getItem('username')
+    let mess = localStorage.getItem('mess')
 
     let [students, setStudents] = useState([])
 
@@ -10,7 +11,7 @@ const PaymentConfirm =()=>{
     },[])
 
     let getStudents = async () => {
-        let response = await fetch(`http://saaddev.pythonanywhere.com/mms/payment_confirmation/${localStorage.getItem('mess')}`)
+        let response = await fetch(`https://saaddev.pythonanywhere.com/mms/payment_confirmation/${mess}/`)
 
         let data = await response.json()
         setStudents(data)
@@ -20,12 +21,12 @@ const PaymentConfirm =()=>{
 
     let onConfirm = async (e, id, username) =>{
         e.preventDefault()
-        let response = await fetch('http://saaddev.pythonanywhere.com/mms/payment_confirmation/', {
+        let response = await fetch(`https://saaddev.pythonanywhere.com/mms/payment_confirmation/${mess}/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({id: id, username: username})
+            body: JSON.stringify({"id": id, "username": username})
         })
         let data = await response.json()
         setConMsg(data)

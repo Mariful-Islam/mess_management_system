@@ -63,6 +63,7 @@ const Navbar = () => {
         {token ?
         <>
           <NavLink to='/'>Home</NavLink>
+          <NavLink to='/documentation/'>Documentation</NavLink>
           <NavLink to='/students'>Student</NavLink>
           {
              admins.map((admin)=>(
@@ -77,7 +78,8 @@ const Navbar = () => {
           <NavLink onClick={onLogout}>Logout</NavLink>
         </>:
         <>
-            <NavLink to='/welcome'>New Mess Setup</NavLink>
+          <NavLink to='/documentation/'>Documentation</NavLink>
+          <NavLink to='/welcome'>New Mess Setup</NavLink>
           <NavLink to='/login'>Login</NavLink>
           <NavLink to='/signup'>Sign Up</NavLink>
 

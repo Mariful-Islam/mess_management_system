@@ -24,17 +24,19 @@ const PaymentHistory = () => {
             <h3>Payment History</h3>
             <div style={{backgroundColor:'#eeeeee', padding:20, borderRadius: 7}}>
                   <div className='payment_confirmation'>
+                    <div>
                         <h4>Name</h4>
                         <h4>Room Number</h4>
                         <h4>Tk</h4>
                         <h4>Month</h4>
                         <h4>Time</h4>
                         <h4>Status</h4>
+                    </div>
                   </div>
                     <div className='payment_confirmation' style={{overflowY:"auto", height:250}}>
                       {paymentHisory.map((p)=>(
 
-                        <>
+                        <div>
                             <p>{p.username}</p>
                             <p>{p.room_num}</p>
                             <p>{p.tk} tk</p>
@@ -62,7 +64,7 @@ const PaymentHistory = () => {
                               </svg>
                                 }
                             </p>
-                        </>
+                        </div>
                     ))}
                     </div>
                 <div className='payment_count'>

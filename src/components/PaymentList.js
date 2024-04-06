@@ -9,6 +9,7 @@ const PaymentList = () => {
 
     let currentMonth = date.toString().toLowerCase().slice(4,7)
     let currentYear = date.toString().slice(11,15)
+    console.log(currentMonth, currentYear)
 
     const navigate = useNavigate()
     let username = localStorage.getItem('username')
@@ -17,21 +18,24 @@ const PaymentList = () => {
 
     useEffect(()=>{
         getStudents()
-    },[])
+    }, [])
 
     let getStudents = async () => {
-        let response = await fetch('http://saaddev.pythonanywhere.com/mms/payments/')
+        let response = await fetch('https://saaddev.pythonanywhere.com/mms/payments/')
         let data = await response.json()
         setStudents(data)
+
     }
 
+    console.log(students)
 
 
 
-    let currentDateFilter = students.filter((student)=>student.month.toLowerCase().slice(0,3).includes(currentMonth)
+
+    let currentDateFilter = students.filter((student)=>student.month.slice(0,3).toLowerCase()===currentMonth.toLowerCase()
                                                         && student.get_date.slice(7,11).includes(currentYear)
                                                         )
-
+    console.log(currentDateFilter)
     let [src, setSrc] = useState("")
     let [searchFilter, setSearchFilter] = useState([])
 
@@ -40,7 +44,7 @@ const PaymentList = () => {
     }, [src])
 
     let onSearch = () => {
-        let filterItems = students.filter((student)=>student.username.toLowerCase().includes(src.toLowerCase()))
+        let filterItems = students.filter((student)=>student.username.toLowerCase().includes(src))
         setSearchFilter(filterItems)
     }
 
@@ -74,7 +78,7 @@ const PaymentList = () => {
         setFilterMonth(filterYear.filter((student)=> student.month.toLowerCase()===month.toLowerCase()))
     }
 
-    let messName = "BMS"
+    let messName = localStorage.getItem('mess')
 
 
     // total calculation
