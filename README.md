@@ -2,7 +2,25 @@
 
 This is a web application for managing student or people of a building. It manages payment, student entry or exit, student info query. It is not developed not only for a mess or house but also developed for more house. 
 
+## To initialize this project in your machine
 
+1. Firstly clone this repository in your local machine.
+``` sh
+git clone https://github.com/Mariful-Islam/mess_management_system.git
+```
+2. Go to project directory
+``` sh
+cd mess_management_system
+```
+3. Enter this command to download node_module
+
+``` sh
+npm install
+```
+4. After installation type
+``` sh 
+npm start
+```
 
 # How can you use this application?
 
